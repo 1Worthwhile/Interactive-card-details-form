@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+input {
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--White);
+}
+.remove {
+  display: none !important;
+}
+:root {
+  --Linear-gradient: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  --Red: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: var(--White);
+  display: flex;
+}
+
+.card_con {
+  width: 30%;
+  background-image: url("images/bg-main-desktop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.card_con .card_front {
+  background-image: url("images/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  width: 380px;
+  height: 230px;
+  transform: translateX(150px);
+  border-radius: 10px;
+}
+
+.card_con .card_front h4 {
+  color: var(--White);
+  font-weight: 400;
+  font-size: 25px;
+  padding: 40px 0 20px 0;
+  display: flex;
+  gap: 10px;
+}
+.card_con .card_front .owner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_con .card_front .owner p {
+  font-size: 13px;
+  color: var(--White);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.card_con .card_back {
+  width: 380px;
+  background-image: url("images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  transform: translateX(190px);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-radius: 10px;
+}
+.card_con .card_back p {
+  transform: translateX(-50px);
+  color: var(--White);
+}
+.form_con {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.form_con form {
+  width: 400px;
+  padding: 30px;
+}
+
+.form_con form .input_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form_con form .input_box:nth-child(2) {
+  margin-top: 20px;
+}
+.form_con form .input_box label {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.form_con form .input_box input {
+  width: 100%;
+  padding: 9px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--Light-grayish-violet);
+}
+.form_con form .input_box:first-child p {
+  color: var(--Very-dark-violet);
+}
+.form_con form .input_box p {
+  font-size: 10px;
+  color: var(--Red);
+  font-weight: 500;
+  display: none;
+}
+
+.form_con form .section {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form_con form .section small {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.form_con form .section .date_con > div {
+  display: flex;
+  gap: 10px;
+}
+
+.form_con form .section .date_con > div .date_box {
+  width: 80px;
+}
+.form_con form .section .date_con > div .date_box input {
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--Light-grayish-violet);
+  padding: 9px 10px;
+  border-radius: 5px;
+}
+.form_con form .section .date_con > div .date_box p {
+  font-size: 10px;
+  color: var(--Red);
+  font-weight: 500;
+  display: none;
+}
+.form_con form .section .cvc_box {
+  width: 160px;
+}
+.form_con form .section .cvc_box input {
+  padding: 9px 10px;
+  border: 1px solid var(--Light-grayish-violet);
+  border-radius: 5px;
+  width: 100%;
+}
+.form_con form .section .cvc_box p {
+  font-size: 10px;
+  color: var(--Red);
+  font-weight: 500;
+  display: none;
+}
+.form_con form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: var(--Very-dark-violet);
+  color: var(--White);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form_con .thanks_section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_con .thanks_section h2 {
+  text-transform: uppercase;
+  color: var(--Very-dark-violet);
+  margin-top: 30px;
+}
+.form_con .thanks_section p {
+  color: var(--Dark-grayish-violet);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.form_con .thanks_section button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: var(--Very-dark-violet);
+  padding: 10px 0;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .card_con .card_front {
+    padding: 30px;
+    width: 330px;
+    height: 200px;
+    transform: translateX(100px);
+  }
+
+  .card_con .card_front h4 {
+    color: var(--White);
+    font-size: 20px;
+    padding: 30px 0 20px 0;
+  }
+
+  .card_con .card_back {
+    width: 330px;
+    height: 200px;
+    transform: translateX(100px);
+  }
+  .card_con .card_back p {
+    transform: translateX(-50px);
+    color: var(--White);
+  }
+}
+
+@media (max-width: 800px) {
+  .form_con {
+    padding: 40px 0;
+  }
+  .wrapper {
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+  }
+  .card_con {
+    width: 100%;
+    padding: 40px;
+    height: fit-content;
+    flex-direction: column-reverse;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .card_con .card_front {
+    transform: translate(-30px, -50px);
+    z-index: 100;
+  }
+  .card_con .card_back {
+    transform: translateX(30px);
+    z-index: 99;
+  }
+  .form_con {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .form_con form {
+    width: 100%;
+    padding: 10px;
+  }
+  .form_con .thanks_section {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .form_con .thanks_section p {
+    font-size: 13px;
+  }
+  .card_con {
+    height: 300px;
+    position: relative;
+  }
+  .card_con .card_back {
+    transform: translateY(0);
+    height: 200px;
+    width: 250px;
+    background-size: contain;
+  }
+  .card_con .card_front {
+    transform: translateY(30px);
+    overflow: hidden;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 250px;
+    height: 156px;
+    padding: 10px 20px;
+  }
+  .card_con .card_front h4 {
+    font-size: 15px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .card_con .card_front .owner p {
+    font-size: 10px;
+  }
+  .card_con .card_back p {
+    transform: translateX(-30px);
+    font-size: 15px;
+  }
+  .form_con {
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card_con">
+        <!-- CARD FRONT -->
+        <div class="card_front">
+          <div class="logo">
+            <img src="images/card-logo.svg" />
+          </div>
+          <h4 class="card_num">
+            <span class="set_1">0000</span>
+            <span class="set_2">0000</span>
+            <span class="set_3">0000</span>
+            <span class="set_4">0000</span>
+          </h4>
+          <div class="owner">
+            <p class="card_name">felicia leire</p>
+            <p class="card_date">
+              <span class="month">09</span>/<span class="year">26</span>
+            </p>
+          </div>
+        </div>
+        <!-- CARD BACK -->
+        <div class="card_back">
+          <p class="card_pin">000</p>
+        </div>
+      </div>
+      <div class="form_con">
+        <form action="#" class="">
+          <div class="input_box">
+            <label for="name">name</label>
+            <input
+              type="text"
+              id="name"
+              maxlength="20"
+              placeholder="e.g. Jane Appplesend "
+            />
+            <p class="err"></p>
+          </div>
+
+          <div class="input_box">
+            <label for="card_number">card number</label>
+            <input
+              type="tel"
+              id="number"
+              maxlength="16"
+              placeholder="e.g. 1234 1234 1234 1234"
+            />
+            <p class="err">wrong format, numbers only</p>
+          </div>
+
+          <div class="section">
+            <div class="date_con">
+              <small>exp.date(mm/yy)</small>
+              <div>
+                <div class="date_box">
+                  <input
+                    type="tel"
+                    placeholder="MM"
+                    id="month_input"
+                    maxlength="2"
+                  />
+                  <p class="err">can't be blank</p>
+                </div>
+
+                <div class="date_box">
+                  <input
+                    type="tel"
+                    placeholder="YY"
+                    id="year_input"
+                    maxlength="2"
+                  />
+                  <p class="err">can't be blank</p>
+                </div>
+              </div>
+            </div>
+            <div class="cvc_box">
+              <small>CVC</small>
+              <input
+                type="tel"
+                placeholder="e.g. 123"
+                id="cvc_input"
+                maxlength="3"
+              />
+              <p class="err">can't be blank</p>
+            </div>
+          </div>
+          <button class="submit">confirm</button>
+        </form>
+
+        <div class="thanks_section remove">
+          <div class="img">
+            <img src="images/icon-complete.svg" />
+          </div>
+          <h2>thank you!</h2>
+          <p>we've added your card details</p>
+          <button>continue</button>
+        </div>
+      </div>
+    </div>
+    <!-- ======ATTRIBUTE================ -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">WORTHWHILE</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
